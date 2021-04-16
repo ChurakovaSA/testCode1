@@ -1,0 +1,17 @@
+{
+  "project" : {
+    "id" : "s-68305-syY",
+    "name" : "s-68305-syY",
+    "folder" : "/"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "shared" : false
+  },
+  "intents" : [ ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ]
+}
