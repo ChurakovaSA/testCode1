@@ -22,9 +22,9 @@ theme: /
         a: Привет привет
         
     state: Имя
-        q!: userID
+        q!: * $userID
         script:
-        var q = $parseTree.value;
+        var user = $parseTree._userID;
         var url = "https://smartapp-code.sberdevices.ru/tools/api/data/$userId";
         var response = $http.get(url);
         if (response.isOk) {
