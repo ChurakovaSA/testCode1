@@ -28,9 +28,10 @@ theme: /
         var url = "https://smartapp-code.sberdevices.ru/tools/api/data/$userId";
         var response = $http.get(url);
         if (response.isOk) {
-            $request.channelUserId = response.data.userId;
+            $channel = $request.channelUserId;
         }
-        a: Привет!!! {{$request.channelUserId}}        
+        $session.UserId = $channel;
+        a: Привет!!! {{$session.UserId}}        
         
     state: Дата
         intent!: /дата
