@@ -30,8 +30,7 @@ theme: /
         if (response.isOk) {
             $channel = $request.channelUserId;
         }
-        $session.UserId = $channel;
-        a: Привет!!! {{$session.UserId}}        
+        a: Привет!!! {{$channel}}        
         
     state: Дата
         intent!: /дата
