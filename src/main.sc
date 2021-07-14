@@ -25,8 +25,8 @@ theme: /
         q!: https
         a: http_2 compleate 
         script:
-            var url = 'https://10.116.18.159/ift-smartappide-ba/1815/726/audio/tEklYWBur0AZkskn.wav'
-            var response = $http.query(url, {method: "GET", timeout: 50});
+            var url = 'http://content.sberdevices.ru/smartmarket-smide-prod/68305/68306/TOeha4A6hsCK525M.png'
+            var response = $http.query(url, {method: "GET", timeout: 600});
             if (response.isOk){
             $session.answer = response
             }else{
