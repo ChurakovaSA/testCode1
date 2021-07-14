@@ -21,18 +21,6 @@ theme: /
         intent!: /привет
         a: Привет привет
 
-    state: https
-        q!: https
-        a: http_2 compleate 
-        script:
-            var url = 'http://content.sberdevices.ru/smartmarket-smide-prod/68305/68306/TOeha4A6hsCK525M.png'
-            var response = $http.query(url, {method: "GET", timeout: 600});
-            if (response.isOk){
-            $session.answer = response
-            }else{
-            $session.answer = response.error
-            }
-            $reactions.answer($session.answer);
 
         
     state: Имя
