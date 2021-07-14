@@ -13,5 +13,5 @@
   },
   "intents" : [ ],
   "entities" : [ ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ]
+  "enabledSystemEntities" : [ "duckling.time" ]
 }

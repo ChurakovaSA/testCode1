@@ -20,6 +20,20 @@ theme: /
     state: Приветствие
         intent!: /привет
         a: Привет привет
+
+    state: https
+        q!: https
+        a: http_2 compleate 
+        script:
+            var url = 'https://10.116.18.159/ift-smartappide-ba/1815/726/audio/tEklYWBur0AZkskn.wav'
+            var response = $http.query(url, {method: "GET", timeout: 50});
+            if (response.isOk){
+            $session.answer = response
+            }else{
+            $session.answer = response.error
+            }
+            $reactions.answer($session.answer);
+
         
     state: Имя
         q!: * $userID
